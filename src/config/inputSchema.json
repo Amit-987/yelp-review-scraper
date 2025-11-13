@@ -1,0 +1,33 @@
+{
+  "title": "Yelp Review Scraper Input Schema",
+  "type": "object",
+  "description": "Configuration schema for the Yelp review scraper CLI.",
+  "properties": {
+    "startUrls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "Yelp business URLs to scrape reviews from."
+      },
+      "minItems": 1,
+      "description": "List of Yelp business listing URLs."
+    },
+    "maxPages": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Maximum number of review pages to crawl per business URL."
+    },
+    "maxReviewsPerPage": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Optional cap on the number of reviews to collect from each page."
+    },
+    "outputFile": {
+      "type": "string",
+      "description": "Optional output JSON file path. Defaults to a timestamped file inside the data directory."
+    }
+  },
+  "required": ["startUrls"],
+  "additionalProperties": false
+}
