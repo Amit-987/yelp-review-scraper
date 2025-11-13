@@ -1,0 +1,31 @@
+{
+  "name": "yelp-review-scraper",
+  "version": "1.0.0",
+  "description": "A TypeScript-based Yelp review scraper that extracts structured review data for analysis.",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/main.ts",
+    "start:build": "npm run build && node dist/main.js",
+    "lint": "echo \"No linter configured\"",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [
+    "yelp",
+    "scraper",
+    "reviews",
+    "typescript",
+    "cheerio"
+  ],
+  "author": "Bitbash",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
