@@ -1,0 +1,8 @@
+{
+  "startUrls": [
+    "https://www.yelp.com/biz/restaurant-example"
+  ],
+  "maxPages": 1,
+  "maxReviewsPerPage": 50,
+  "outputFile": "sample-output.json"
+}
